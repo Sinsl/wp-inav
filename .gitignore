@@ -58,3 +58,4 @@ build/Release
 .cache
 .dynamodb/
 .DS_Store
+*.tgz
