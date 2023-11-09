@@ -9,6 +9,10 @@
 /readme.html
 /wp-*.php
 /xmlrpc.php
+/backuply/*
+!/backuply/backups-*
+/backuply/backups-*/*
+!/backuply/backups-*/wp_localhost*.tar.gz
 
 # Configuration
 wp-config.php

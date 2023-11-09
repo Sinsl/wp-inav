@@ -17,5 +17,5 @@ Adding (L1) : wp_term_taxonomy table|working|50
 Adding (L1) : wp_usermeta table|working|50
 Adding (L1) : wp_users table|working|50
 Starting to create archive|info|60
-Archive created with a file size of 274.76 KB|info|100
+Archive created with a file size of 274.79 KB|info|100
 Backup Successfully Completed|success|100
