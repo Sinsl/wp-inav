@@ -63,6 +63,11 @@
 	padding: 10px;
 	box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.25);
 }
+.btn-light {
+    background-color: #D9D9D9;
+	color: black;
+    box-shadow: 3px 3px 15px 5px rgba(255, 255, 255, 0.25);
+}
 
 /* ----------- HEADER MENU -----------*/
 
@@ -258,6 +263,7 @@
 
 
 /* ----------- BLOCK SPUTNIKS-----------*/
+
 .sputnik-box {
     width: 100%;
     background-color: var(--color-blue);
@@ -319,4 +325,254 @@
     font-size: 22px;
     font-weight: bold;
     margin-top: -10px;
+}
+
+/* ----------- BLOCK PRODUCTS-----------*/
+
+#round-top-right {
+    position: absolute;
+	top: -900px;
+	right: -900px;
+	width: 1200px;
+	height: 1200px;
+	border-radius: 50%;
+	background-color: #D9D9D9;
+	opacity: 0.25;
+	z-index: -10;
+}
+
+.products-content {
+    width: 100%;
+    padding: 150px 30px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-areas: "item-1 item-2 item-5 item-5"  
+                         "item-3 item-4 item-5 item-5"  
+                         "item-6 item-7 item-8 item-9"; 
+    grid-template-rows: repeat(3, 280px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-transform: uppercase;
+}
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid var(--color-blue);
+    padding: 5px 10px 20px;
+    text-align: center;
+    row-gap: 20px;
+    font-size: 22px;
+}
+.product-item:hover {
+    color: black;
+    background-color: rgba(65, 77, 93, 0.1);
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.product-item_1 {
+    grid-area: item-1;
+}
+.product-item_2 {
+    grid-area: item-2;
+}
+.product-item_3 {
+    grid-area: item-3;
+}
+.product-item_4 {
+    grid-area: item-4;
+}
+.product-title {
+    grid-area: item-5;
+}
+.product-item_6 {
+    grid-area: item-6;
+}
+.product-item_7 {
+    grid-area: item-7;
+}
+.product-item_8 {
+    grid-area: item-8;
+}
+.product-item_9 {
+    grid-area: item-9;
+}
+.product-item_img {
+    /* border: 1px solid; */
+    height: 130px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.product-img_1 {
+    background-image: url(../images/products/2-11.png);
+}
+.product-img_2 {
+    background-image: url(../images/products/2-12.png);
+}
+.product-img_3 {
+    background-image: url(../images/products/2-13.png);
+}
+.product-img_4 {
+    background-image: url(../images/products/2-14.png);
+}
+.product-img_6 {
+    background-image: url(../images/products/2-15.png);
+}
+.product-img_7 {
+    background-image: url(../images/products/2-16.png);
+}
+.product-img_8 {
+    background-image: url(../images/products/2-17.png);
+}
+.product-img_9 {
+    background-image: url(../images/products/2-18.png);
+}
+.product-title h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 35%;
+}
+
+/* ----------- BLOCK GLONASS-----------*/
+.box-glonass {
+    padding: 0 30px;
+}
+.glonass-fon {
+    background-color: var(--color-blue-dark);
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 60%;
+    top: 20%;
+    left: 0;
+}
+.glonass-content {
+    background-color: var(--color-blue);
+    color: white;
+    width: 100%;
+    padding: 130px 40px 175px;
+    max-width: 1200px;
+}
+.glonass-title-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.glonass-title {
+    text-transform: uppercase;
+    font-size: 48px;
+}
+.glonass-title-img {
+    width: 100px;
+    height: 90px;
+    background-image: url(../images/other/gl2-glonass.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 80px;
+}
+.glonass-text {
+    width: 750px;
+    margin-top: 78px;
+    font-size: 28px;
+}
+
+.glonass-content .btn-light {
+    margin-top: 98px;
+}
+
+/* ----------- BLOCK SCHOOL-----------*/
+
+.school-content {
+    padding: 200px 30px;
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+}
+.school-img-box,
+.school-text-box {
+    width: calc((100% - 100px) / 2);
+}
+.school-img_item {
+    position: relative;
+    width: 370px;
+    height: 240px;
+    border: 1px solid var(--color-blue);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.school-img_1 {
+    background-image: url(../images/school/since_scool_5-1.png);
+    z-index: 3;
+}
+.school-img_2 {
+    background-image: url(../images/school/since_scool_5-2.png);
+    left: calc(100% - 370px);
+    top: -50px;
+    z-index: 2;
+}
+.school-img_3 {
+    background-image: url(../images/school/since_scool_5-3.png);
+    top: -100px;
+    z-index: 1;
+}
+.school-title {
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-top: 50px;
+}
+.school-text {
+    margin-top: 64px;
+    width: 100%;
+}
+
+.school-text-box .btn-detailed {
+    margin-top: 105px;
+}
+
+/* ----------- BLOCK CAREER-----------*/
+.box-career {
+    background-color: #D9D9D9;
+}
+.box-career::before {
+    width: 30%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #414D5D;
+    opacity: 0.3;
+}
+.career-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+.career-text-box,
+.career-btn-box,
+.career-img-box {
+    width: calc(100% / 3);
+}
+.career-text_title {
+    text-transform: uppercase;
+    font-size: 48px;
+}
+.career-text_txt {
+    width: 90%;
+    max-width: 330px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+.career-img-box_fon {
+    width: calc(100% - 50px);
+    background-color: white;
+    height: 300px;
 }

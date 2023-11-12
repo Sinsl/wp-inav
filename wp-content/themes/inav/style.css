@@ -68,6 +68,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'SourceCodePro semibold';
+	src: url('fonts/Source_Code_Pro/static/SourceCodePro-SemiBold.ttf');
+	font-weight: semibold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceCodePro medium';
+	src: url('fonts/Source_Code_Pro/static/SourceCodePro-Medium.ttf');
+	font-weight: medium;
+	font-style: normal;
+}
+
 /* Normalize
 --------------------------------------------- */
 
@@ -403,7 +417,7 @@ template {
 
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-*,
+
 *::before,
 *::after {
 	box-sizing: inherit;
