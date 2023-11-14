@@ -137,6 +137,7 @@ function add_style_frontend() {
  	wp_enqueue_style( 'style-desktop', get_stylesheet_directory_uri() . '/styles/desktop.css' );
     wp_enqueue_style( 'style-tablet', get_stylesheet_directory_uri() . '/styles/tablet.css' );
     wp_enqueue_style( 'style-mobile', get_stylesheet_directory_uri() . '/styles/mobile.css' );
+    wp_enqueue_style( 'style-awesome', get_stylesheet_directory_uri() . '/fonts/fontawesome/css/all.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'add_style_frontend', 25 );
 
