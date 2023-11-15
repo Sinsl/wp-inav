@@ -27,31 +27,35 @@
 
 	<header id="masthead" class="site-header">
         <div class="header-dark"></div>
-        <div class="content-box">
-            <div class="menu-box">
-                <div class="brands">
-                    <div class="logo-brands logo-roscosmos"></div>
-                    <div class="logo-brands logo-glonass"></div>
-                    <div class="logo-brands logo-inav"></div>
-                </div>
-                <nav id="site-navigation" class="main-navigation">
-                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'inav' ); ?></button>
-                    <?php
-                    wp_nav_menu(
-                        array(
-                            'theme_location' => 'menu-1',
-                            'menu_id'        => 'primary-menu',
-                        )
-                    );
-                    ?>
-                </nav><!-- #site-navigation -->
-                
-                <div class="lang-btn-box">
-                    <div class="lang-btn_ru">ru</div>
-                    <div class="lang-btn_en">en</div>
-                </div>
-            </div>		
-
+        <div class="menu-container">
+            <div class="content-box">
+                <div class="menu-box">
+                    <div class="brands">
+                        <div class="logo-brands logo-roscosmos"></div>
+                        <div class="logo-brands logo-glonass"></div>
+                        <div class="logo-brands logo-inav"></div>
+                    </div>
+                    <nav id="site-navigation" class="main-navigation">
+                        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'inav' ); ?></button>
+                        <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'menu-1',
+                                'menu_id'        => 'primary-menu',
+                            )
+                        );
+                        ?>
+                    </nav><!-- #site-navigation -->
+                    
+                    <div class="lang-btn-box">
+                        <div class="lang-btn_ru">ru</div>
+                        <div class="lang-btn_en">en</div>
+                    </div>
+                </div>		
+            </div>
+        </div>
+        
+        <div class="content-box branding-content">
             <div class="site-branding-home" style="background-image: url(<?php header_image() ?>);">
                 <div class="site-logo-big">
                     <?php the_custom_logo(); ?>

@@ -20,6 +20,9 @@
     background-color: #161B22;
     width: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
+    /* height: 100%; */
     height: calc(100% - 100px);
     z-index: -10;
 }
@@ -74,7 +77,14 @@
 }
 
 /* ----------- HEADER MENU -----------*/
-
+.menu-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--color-blue-dark);
+}
 .menu-box {
     position: relative;
     width: 100%;
@@ -134,7 +144,10 @@
 }
 
 /* ----------- HEADER CONTENT-----------*/
-
+.branding-content {
+    /* margin-top: 100px; */
+    padding-top: 100px;
+}
 .site-branding-home {
 	width: 100%;
 	height: 700px;
